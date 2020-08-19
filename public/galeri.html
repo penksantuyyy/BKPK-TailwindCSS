@@ -9,35 +9,40 @@
   <link rel="stylesheet" href="styles.css">
   <title>BKPK Unram | Galeri</title>
 </head>
-<body class="font-body font-base text-gray-600 bg-gray-100">
-  <div class="container mx-auto">
+<body class="font-body text-sm md:text-base text-gray-600 bg-gray-100">
+  <div class="mx-auto">
     <!-- Navigation -->
     <div class="border-b border-gray-300">
-      <nav class="flex justify-between items-center mx-20 my-4">
-        <div class="flex items-center">
-          <img class="mr-4 w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk">
+      <nav class="mx-10 my-4 relative flex justify-between items-center">
+        <div class="mx-0 sm:mx-5 md:mx-10 flex items-center">
+          <img class="mr-4 w-8 sm:w-10 md:w-12 lg:w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk">
           <div class="hidden lg:block">
             <h3 class="font-bold text-blue-900">UPT BKPK UNRAM</h3>
-            <p class="md:hidden text-xs">Bimbingan Konseling & Pembinaan Karier</p>
+            <p class="text-xs">Bimbingan Konseling & Pembinaan Karier</p>
           </div>
         </div>
-        <ul class="hidden md:flex  uppercase">
-          <li class="ml-8">
-            <a href="index.html">Beranda</a>
-          </li>
-          <li class="ml-8">
-            <a href="berita.html">Berita</a>
-          </li>
-          <li class="ml-8 text-blue-800 font-bold">
-            <a href="#">Galeri</a>
-          </li>
-          <li class="ml-8">
-            <a href="informasi.html">Informasi</a>
-          </li>
-          <li class="ml-8">
-            <a href="tentang.html">Tentang</a>
-          </li>
-        </ul>
+        <div class="mx-0 sm:mx-5 md:mx-10 block md:hidden" id="navbarBurger">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+        <div class="hidden md:block absolute md:static mt-64 md:mt-0 left-0 min-w-full min-h-full md:min-h-0 md:min-w-0 z-10 md:z-0 uppercase" id="menuNavbar">
+          <ul class="mt-4 sm:mt-0 mx-0 py-2 bg-gray-100 shadow-xl md:shadow-none md:flex">
+            <li class="px-8 md:px-4 py-2 md:py-0 text-blue-800 font-bold hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="index.html">Beranda</a>
+            </li>
+            <li class="px-8 py-2 md:px-4 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="berita.html">Berita</a>
+            </li>
+            <li class="px-8 py-2 md:px-4 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="galeri.html">Galeri</a>
+            </li>
+            <li class="px-8 py-2 md:px-4 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="informasi.html">Informasi</a>
+            </li>
+            <li class="px-8 py-2 md:pl-4 md:px-0 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="tentang.html">Tentang</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 
@@ -50,16 +55,16 @@
       </section>
 
       <!-- Form -->
-      <form class="mx-20 mt-10">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div class="col-span-1 md:col-span-8 flex items-center">
-            <input class="text-sm md:text-base py-4 px-8 w-full border border-gray-200 rounded outline-none" type="text" placeholder="Ketikkan Pencarian Disini . . .">
+      <form class="mx-10 md:mx-20 mt-10">
+        <div class="block lg:grid grid-cols-12 gap-8">
+          <div class="lg:col-span-8 flex items-center">
+            <input class="py-4 px-8 w-full border border-gray-200 rounded outline-none" type="text" placeholder="Ketikkan Pencarian Disini . . .">
             <button type="submit" class="-ml-16 bg-yellow-400 px-5 py-4 rounded-tr rounded-br outline-none">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="search text-gray-700 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
             </button>
           </div>
 
-          <div class="col-span-4">
+          <div class="mt-4 lg:mt-0 lg:col-span-4">
             <div class="flex items-center relative overflow-hidden">
               <input class="py-4 px-8 w-full border border-gray-200 outline-none" type="text" placeholder="Kategori">
               <button type="submit" class="-ml-16 bg-yellow-400 px-5 py-4 rounded-tr rounded-br border-none focus:outline-none" id="showCategory">
@@ -82,42 +87,30 @@
         </div>        
       </form>
 
-      <section class="mx-20 mt-10 mb-40">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="rounded">
-            <img src="./images/gallery-1.jpg" alt="gallery-1">
+      <section class="mx-10 md:mx-20 mt-10 mb-40">
+        <div class="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-8">
+          <div class="md:col-span-4 rounded overflow-hidden">
+            <img class="min-h-full max-w-full object-cover block" src="./images/gallery-1.jpg" alt="gallery-1">
           </div>
   
-          <div class="rounded">
-            <img src="./images/gallery-2.jpg" alt="gallery-2">
+          <div class="md:col-span-4 rounded overflow-hidden">
+            <img class="min-h-full max-w-full object-cover block" src="./images/gallery-2.jpg" alt="gallery-2">
           </div>
   
-          <div class="rounded">
-            <img src="./images/gallery-3.jpg" alt="gallery-3">
+          <div class="md:col-span-4 rounded overflow-hidden">
+            <img class="min-h-full max-w-full object-cover block" src="./images/gallery-3.jpg" alt="gallery-3">
           </div>
 
-          <div class="rounded">
-            <img src="./images/gallery-4.jpg" alt="gallery-4">
+          <div class="md:col-span-4 rounded overflow-hidden">
+            <img class="min-h-full max-w-full object-cover block" src="./images/gallery-4.jpg" alt="gallery-4">
           </div>
   
-          <div class="rounded">
-            <img src="./images/gallery-5.jpg" alt="gallery-5">
+          <div class="md:col-span-4 rounded overflow-hidden">
+            <img class="min-h-full max-w-full object-cover block" src="./images/gallery-5.jpg" alt="gallery-5">
           </div>
   
-          <div class="rounded">
-            <img src="./images/gallery-6.jpg" alt="gallery-6">
-          </div>
-
-          <div class="rounded">
-            <img src="./images/gallery-7.jpg" alt="gallery-7">
-          </div>
-
-          <div class="rounded">
-            <img src="./images/gallery-8.jpg" alt="gallery-8">
-          </div>
-
-          <div class="rounded">
-            <img src="./images/gallery-9.jpg" alt="gallery-9">
+          <div class="md:col-span-4 rounded overflow-hidden">
+            <img class="min-h-full max-w-full object-cover block" src="./images/gallery-11.jpg" alt="gallery-6">
           </div>
         </div>
 
@@ -144,27 +137,27 @@
     </main>
 
     <footer class="border-t border-gray-200">
-      <div class="pt-12 pb-16 mx-20 grid grid-cols-12 gap-12">
-        <div class="col-span-4">
+      <div class="pt-12 pb-16 mx-10 md:mx-20 md:grid md:grid-cols-12 gap-12">
+        <div class="mb-6 md:mb-0 md:col-span-6 lg:col-span-3">
           <img class="w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk-brand">
           <div class="mt-4 mb-2">
             <h3 class="font-bold text-blue-900 text-xl">UPT. BKPK UNIVERSITAS MATARAM</h3>
           </div>
           <p>Jl. Majapahit No.62, Gomong, Selaparang
-            Kota Mataram, Nusa Tenggara Bar. 83115 Tel: (0370) 633007
+            Kota Mataram, Nusa Tenggara Barat Kode Pos : 83115 Tel: (0370) 633007
           </p>
         </div>
-        <div class="col-span-3 ml-6">
+        <div class="mb-6 lg:pl-4 md:mb-0 lg:ml-6 md:col-span-6 lg:col-span-3 justify-center">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Menu Utama</h4>
           <ul>
-            <li class="mb-3"><a class="hover:text-yellow-600" href="index.html">Beranda</a></li>
-            <li class="mb-3"><a class="hover:text-yellow-600" href="berita.html">Berita Terbaru</a></li>
-            <li class="mb-3"><a class="hover:text-yellow-600" href="galeri.html">Galeri Foto</a></li>
-            <li class="mb-3"><a class="hover:text-yellow-600" href="informasi.html">Informasi Terkini</a></li>
-            <li class="mb-3"><a class="hover:text-yellow-600" href="tentang.html">Tentang Kami</a></li>
+            <li class="mb-3"><a class="hover:text-yellow-600" href="#">Beranda</a></li>
+            <li class="mb-3"><a class="hover:text-yellow-600" href="#">Berita Terbaru</a></li>
+            <li class="mb-3"><a class="hover:text-yellow-600" href="#">Galeri Foto</a></li>
+            <li class="mb-3"><a class="hover:text-yellow-600" href="#">Informasi Terkini</a></li>
+            <li class="mb-3"><a class="hover:text-yellow-600" href="#">Tentang Kami</a></li>
           </ul>
         </div>
-        <div class="col-span-3">
+        <div class="mb-6 md:mb-0 md:col-span-6 lg:col-span-3">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Lembaga Unit</h4>
           <ul>
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">UNRAM</a></li>
@@ -174,12 +167,12 @@
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">UPT Kerarsipan</a></li>
           </ul>
         </div>
-        <div class="col-span-2">
+        <div class="md:col-span-6 lg:col-span-3">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Sosial Media</h4>
-          <ul class="flex">
-            <li class="pr-3"><a href="#"><img class="w-10" src="./images/icon-gmail.png" alt="Instagram"></a></li>
-            <li class="pr-3"><a href="#"><img class="w-10" src="./images/icon-ig.png" alt="Instagram"></a></li>
-            <li class=""><a href="#"><img class="w-10" src="./images/icon-fb.png" alt="Instagram"></a></li>
+          <ul class="flex md:flex-wrap">
+            <li class="pr-1"><a href="#"><img class="md:w-10" src="./images/icons/icon-gmail.svg" alt="Instagram"></a></li>
+            <li class="pr-1"><a href="#"><img class="md:w-10" src="./images/icons/icon-instagram.svg" alt="Instagram"></a></li>
+            <li class="pr-0"><a href="#"><img class="md:w-10" src="./images/icons/icon-facebook.svg" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>

@@ -9,35 +9,40 @@
   <link rel="stylesheet" href="styles.css">
   <title>BKPK Unram | Tentang Kami</title>
 </head>
-<body class="font-body font-base text-gray-600 bg-gray-100">
-  <div class="container mx-auto">
+<body class="font-body text-sm md:text-base text-gray-600 bg-gray-100">
+  <div class="mx-auto">
     <!-- Navigation -->
     <div class="border-b border-gray-300">
-      <nav class="flex justify-between items-center mx-20 my-4">
-        <div class="flex items-center">
-          <img class="mr-4 w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk">
-          <div class="block">
+      <nav class="mx-10 my-4 relative flex justify-between items-center">
+        <div class="mx-0 sm:mx-5 md:mx-10 flex items-center">
+          <img class="mr-4 w-8 sm:w-10 md:w-12 lg:w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk">
+          <div class="hidden lg:block">
             <h3 class="font-bold text-blue-900">UPT BKPK UNRAM</h3>
             <p class="text-xs">Bimbingan Konseling & Pembinaan Karier</p>
           </div>
         </div>
-        <ul class="flex uppercase">
-          <li class="ml-8">
-            <a href="index.html">Beranda</a>
-          </li>
-          <li class="ml-8">
-            <a href="berita.html">Berita</a>
-          </li>
-          <li class="ml-8">
-            <a href="galeri.html">Galeri</a>
-          </li>
-          <li class="ml-8">
-            <a href="informasi.html">Informasi</a>
-          </li>
-          <li class="ml-8 text-blue-800 font-bold">
-            <a href="tentang.html">Tentang</a>
-          </li>
-        </ul>
+        <div class="mx-0 sm:mx-5 md:mx-10 block md:hidden" id="navbarBurger">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+        <div class="hidden md:block absolute md:static mt-64 md:mt-0 left-0 min-w-full min-h-full md:min-h-0 md:min-w-0 z-10 md:z-0 uppercase" id="menuNavbar">
+          <ul class="mt-4 sm:mt-0 mx-0 py-2 bg-gray-100 shadow-xl md:shadow-none md:flex">
+            <li class="px-8 md:px-4 py-2 md:py-0 text-blue-800 font-bold hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="index.html">Beranda</a>
+            </li>
+            <li class="px-8 py-2 md:px-4 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="berita.html">Berita</a>
+            </li>
+            <li class="px-8 py-2 md:px-4 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="galeri.html">Galeri</a>
+            </li>
+            <li class="px-8 py-2 md:px-4 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="informasi.html">Informasi</a>
+            </li>
+            <li class="px-8 py-2 md:pl-4 md:px-0 md:py-0 hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
+              <a href="tentang.html">Tentang</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 
@@ -50,9 +55,9 @@
       </section>
 
       <!-- Sambutan Rektor -->
-      <section class="mx-20 mt-20 mb-40">
-        <div class="grid grid-cols-12 gap-8">
-          <div class="col-span-4">
+      <section class="mx-10 md:mx-20 mt-20 mb-40">
+        <div class="lg:grid grid-cols-12 gap-8">
+          <div class="mb-6 lg:mb-0 col-span-4">
             <img class="rounded" src="./images/foto-rektor.jpg" alt="foto-rektor">
           </div>
           <div class="col-span-8">
@@ -73,18 +78,18 @@
       </section>
 
       <!-- Visi dan Misi -->
-      <section class="mx-20 my-40">
+      <section class="mx-10 md:mx-20 my-40">
         <div class="text-center mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">VISI & MISI</h3>
           <p class="font-medium tracking-wider">Visi dan Misi Utama dari BKPK Unram</p>
         </div>
 
-        <div class="grid grid-cols-12 gap-8">
-          <div class="p-4 mb-8 block col-span-3 bg-white h-48 border rounded leading-7 relative">
+        <div class="lg:grid grid-cols-12 gap-8">
+          <div class="p-4 mb-8 block lg:col-span-3 bg-white h-48 border rounded leading-7 relative">
             <h3 class="text-xl font-bold text-blue-900 tracking-wider">Visi BKPK UNRAM</h3>
             <p class="mt-2">“Menjadi lembaga pendidikan tinggi berbasis riset berdaya saing internasional tahun 2025”</p>
           </div>
-          <div class="block col-span-9">
+          <div class="block lg:col-span-9">
             <h3 class="text-xl font-bold text-blue-900 tracking-wider">Misi BKPK UNRAM</h3>
             <p>1. Melaksanakan proses pendidikan tinggi berstandar mutu nasional dan internasional yang berbasis riset yang kuat dalam rangka untuk menghasilkan sumber daya manusia beriman dan bertaqwa kepada Tuhan Yang Maha Esa, berbudi luhur, memiliki kompetensi dalam bidang-bidangnya dan berwawasan global.
               <br><br>
@@ -100,7 +105,7 @@
       </section>
 
       <!-- Visi dan Misi -->
-      <section class="mx-20 my-40">
+      <section class="mx-10 md:mx-20 my-40">
         <div class="text-center mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">SEJARAH SINGKAT</h3>
           <p class="font-medium tracking-wider">Sejarah awal mula berdirinya BKPK Unram</p>
@@ -124,14 +129,14 @@
       </section>
 
 
-      <section class="mx-20 my-40">
+      <section class="mx-10 md:mx-20 my-40">
         <div class="text-center mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">STRUKTUR ORGANISASI</h3>
           <p class="font-medium tracking-wider">Sistem Kepengurusan di BKPK Unram</p>
         </div>
 
-        <div class="grid grid-cols-12 gap-8">
-          <div class="col-span-3">
+        <div class="block sm:grid grid-cols-12 gap-8">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-1.jpg" alt="foto-anggota-1">
@@ -143,7 +148,7 @@
             </div>
           </div>
 
-          <div class="col-span-3">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-2.jpg" alt="foto-anggota-2">
@@ -154,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-3.jpg" alt="foto-anggota-3">
@@ -165,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-4.jpg" alt="foto-anggota-4">
@@ -176,7 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-5.jpg" alt="foto-anggota-5">
@@ -187,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-6.jpg" alt="foto-anggota-6">
@@ -198,7 +203,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-7.jpg" alt="foto-anggota-7">
@@ -209,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3">
+          <div class="mb-6 sm:mb-0 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <div class="bg-white border border-gray-200 rounded overflow-hidden">
               <div class="mb-4">
                 <img class="h-64 w-full object-cover" src="./images/pengurus-8.jpg" alt="foto-anggota-8">
@@ -225,17 +230,17 @@
     </main>
 
     <footer class="border-t border-gray-200">
-      <div class="pt-12 pb-16 mx-20 grid grid-cols-12 gap-12">
-        <div class="col-span-4">
+      <div class="pt-12 pb-16 mx-10 md:mx-20 md:grid md:grid-cols-12 gap-12">
+        <div class="mb-6 md:mb-0 md:col-span-6 lg:col-span-3">
           <img class="w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk-brand">
           <div class="mt-4 mb-2">
             <h3 class="font-bold text-blue-900 text-xl">UPT. BKPK UNIVERSITAS MATARAM</h3>
           </div>
           <p>Jl. Majapahit No.62, Gomong, Selaparang
-            Kota Mataram, Nusa Tenggara Bar. 83115 Tel: (0370) 633007
+            Kota Mataram, Nusa Tenggara Barat Kode Pos : 83115 Tel: (0370) 633007
           </p>
         </div>
-        <div class="col-span-3 ml-6">
+        <div class="mb-6 lg:pl-4 md:mb-0 lg:ml-6 md:col-span-6 lg:col-span-3 justify-center">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Menu Utama</h4>
           <ul>
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">Beranda</a></li>
@@ -245,7 +250,7 @@
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">Tentang Kami</a></li>
           </ul>
         </div>
-        <div class="col-span-3">
+        <div class="mb-6 md:mb-0 md:col-span-6 lg:col-span-3">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Lembaga Unit</h4>
           <ul>
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">UNRAM</a></li>
@@ -255,12 +260,12 @@
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">UPT Kerarsipan</a></li>
           </ul>
         </div>
-        <div class="col-span-2">
+        <div class="md:col-span-6 lg:col-span-3">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Sosial Media</h4>
-          <ul class="flex">
-            <li class="pr-3"><a href="#"><img class="w-10" src="./images/icon-gmail.png" alt="Instagram"></a></li>
-            <li class="pr-3"><a href="#"><img class="w-10" src="./images/icon-ig.png" alt="Instagram"></a></li>
-            <li class=""><a href="#"><img class="w-10" src="./images/icon-fb.png" alt="Instagram"></a></li>
+          <ul class="flex md:flex-wrap">
+            <li class="pr-1"><a href="#"><img class="md:w-10" src="./images/icons/icon-gmail.svg" alt="Instagram"></a></li>
+            <li class="pr-1"><a href="#"><img class="md:w-10" src="./images/icons/icon-instagram.svg" alt="Instagram"></a></li>
+            <li class="pr-0"><a href="#"><img class="md:w-10" src="./images/icons/icon-facebook.svg" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>

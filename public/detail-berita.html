@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="styles.css">
   <title>BKPK Unram | Detail Berita</title>
 </head>
-<body class="font-body font-base text-gray-600 bg-gray-100">
-  <div class="container mx-auto">
+<body class="font-body text-sm md:text-base text-gray-600 bg-gray-100">
+  <div class="mx-auto">
     <!-- Navigation -->
     <div class="border-b border-gray-300 sticky z-20 top-0 overflow-hidden w-full bg-gray-100">
       <nav class="px-0 md:px-12 text-left md:flex justify-between items-center">
@@ -49,8 +49,8 @@
     </div>
 
     <main>
-      <section class="mx-20 my-6">
-        <div class="flex items-center text-sm">
+      <section class="mx-5 sm:mx-10 md:mx-20 my-6">
+        <div class="flex flex-wrap items-center text-sm">
           <div class="pr-2">
             <a href="index.html">Beranda</a>
           </div>
@@ -80,7 +80,7 @@
             </button>
           </div>
 
-          <div class="mt-4 lg:mt-0 lg:col-span-4">
+          <div class="mt-4 lg:mt-0 lg:col-span-4 relative">
             <div class="flex items-center relative overflow-hidden">
               <input class="py-3 px-4 md:py-4 md:px-8 w-full border border-gray-200 outline-none" type="text" placeholder="Kategori">
               <button type="submit" class="-ml-14 md:-ml-16 bg-yellow-400 px-4 py-3 md:px-5 md:py-4 rounded-tr rounded-br border-none focus:outline-none" id="showCategory">
@@ -90,8 +90,8 @@
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="x text-gray-700 w-5 h-5 md:w-6 md:h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12"></path></svg>
               </button>
             </div>
-            <div class="-mt-px mr-6 hidden absolute bg-white border border-gray-200 rounded" id="categoryDropdown">
-              <ul class="py-2 px-px shadow-lg">
+            <div class="hidden absolute w-full bg-white" id="categoryDropdown">
+              <ul class="py-2 px-px border border-gray-200 rounded-b">
                 <li class="my-2 pl-8 pr-56 py-2 block hover:bg-yellow-400 hover:text-blue-900"><a class="" href="#">Kesehatan</a></li>
                 <li class="my-2 pl-8 pr-56 py-2 block hover:bg-yellow-400 hover:text-blue-900"><a class="" href="#">Kesehatan</a></li>
                 <li class="my-2 pl-8 pr-56 py-2 block hover:bg-yellow-400 hover:text-blue-900"><a class="" href="#">Kesehatan</a></li>
@@ -104,9 +104,9 @@
       </form>
 
 
-      <section class="mx-20 mt-10 mb-40">
-        <div class="grid grid-cols-12 gap-8">
-          <div class="px-8 py-6 col-span-8 border border-gray-200">
+      <section class="mx-5 sm:mx-10 md:mx-20 mt-10 mb-40">
+        <div class="block lg:grid grid-cols-12 gap-8">
+          <div class="px-4 py-3 md:px-8 md:py-6 col-span-12 lg:col-span-8 border border-gray-200">
             
             <h3 class="text-2xl font-bold text-blue-900 tracking-wider">
               WR II Unram Dorong Tata Kelola Arsip Dilakukan Ada Baiknya Secara Online
@@ -116,10 +116,10 @@
               <img src="./images/news-content-1.jpg" alt="news-content-1">
             </div>
 
-            <div class="my-6 flex justify-between items-center">
+            <div class="my-6 flex flex-wrap justify-between items-center">
               <div class="flex items-center">
                 <div class="mr-4">
-                  <img class="w-16 h-16 rounded-full object-cover" src="./images/news-author-1.jpg" alt="news-author-1">
+                  <img class="w-12 h-12 lg:w-16 lg:h-16 rounded-full object-cover" src="./images/news-author-1.jpg" alt="news-author-1">
                 </div>
                 <div>
                   <h4 class="font-bold text-base text-blue-900">
@@ -131,7 +131,7 @@
               <div class="flex">
                 <div class="flex flex-col items-center">
                   <span>
-                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="eye w-6 h-6 text-yellow-600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="eye w-5 h-5 md:w-6 md:h-6 text-yellow-600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                   </span>
                   <p class="p-1 text-sm">
                     <span class="font-semibold text-blue-900">600</span> Kunjungan
@@ -140,7 +140,7 @@
 
                 <div class="ml-4 flex flex-col items-center">
                   <span>
-                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="chat w-6 h-6 text-yellow-600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="chat w-5 h-5 md:w-6 md:h-6 text-yellow-600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
                   </span>
                   <span class="p-1 text-sm">
                     <span class="font-semibold text-blue-900">12</span> Komentar
@@ -174,8 +174,8 @@
             </div>
 
           </div>
-          <div class="col-span-4">
-            <div class="py-6 px-8 border border-gray-200">
+          <div class="col-span-12 md:col-span-6 lg:col-span-4">
+            <div class="px-4 py-3 md:px-8 md:py-6 border border-gray-200">
               <h5 class="text-xl uppercase font-bold text-blue-900 tracking-wider">
                 Most Viewed
               </h5>
@@ -193,7 +193,7 @@
               <button type="button" class="btn btn-outline">Baca Berita</button>
             </div>
             
-            <div class="mt-6 py-6 px-8 border border-gray-200">
+            <div class="mt-6 px-4 py-3 md:px-8 md:py-6 border border-gray-200">
               <h5 class="mb-4 text-xl uppercase font-bold text-blue-900 tracking-wider">
                 Recent Posts
               </h5>
@@ -226,7 +226,7 @@
 
             </div>
 
-            <div class="mt-6 py-6 px-8 border border-gray-200">
+            <div class="mt-6 px-4 py-3 md:px-8 md:py-6 border border-gray-200">
               <h5 class="mb-4 text-xl uppercase font-bold text-blue-900 tracking-wider">
                 Our Photos
               </h5>
@@ -242,15 +242,15 @@
         </div>
       </section>
 
-      <section class="mx-20 mb-40">
+      <section class="mx-5 sm:mx-10 md:mx-20 mb-40">
         <div class="text-center mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">BERITA TERKAIT</h3>
           <p class="font-medium tracking-wider">Berita yang serupa dengan yang anda baca</p>
         </div>
-        <div class="grid grid-cols-3 gap-8">
+        <div class="block md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Card News 1-->
-          <div class="bg-white rounded border border-gray-200">
-            <img src="./images/news-1.jpg" alt="news-photo-1">
+          <div class="mb-6 bg-white rounded border border-gray-200 overflow-hidden">
+            <img class="w-full h-64 object-cover" src="./images/news-1.jpg" alt="news-photo-1">
             <div class="px-4">
               <h3 class="mt-4 font-semibold text-xl text-blue-900">
                 <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="detail-berita.html">Tips Menjaga Kesehatan Ditengah Pandemi</a>
@@ -269,8 +269,8 @@
           </div>
 
           <!-- Card News 2-->
-          <div class="bg-white rounded border border-gray-200">
-            <img src="./images/news-2.jpg" alt="news-photo-2">
+          <div class="mb-6 bg-white rounded border border-gray-200 overflow-hidden">
+            <img class="w-full h-64 object-cover" src="./images/news-2.jpg" alt="news-photo-2">
             <div class="px-4">
               <h3 class="mt-4 font-semibold text-xl text-blue-900">
                 <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="detail-berita.html">Kebanyakan Rebahan Mengakibatkan Stress Akut</a>
@@ -289,8 +289,8 @@
           </div>
 
           <!-- Card News 3-->
-          <div class="bg-white rounded border border-gray-200">
-            <img src="./images/news-3.jpg" alt="news-photo-3">
+          <div class="mb-6 bg-white rounded border border-gray-200 overflow-hidden">
+            <img class="w-full h-64 object-cover" src="./images/news-3.jpg" alt="news-photo-3">
             <div class="px-4">
               <h3 class="mt-4 font-semibold text-xl text-blue-900">
                 <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="detail-berita.html">Meracik Obat Alami untuk Insomnia Akut</a>
@@ -312,17 +312,17 @@
     </main>
 
     <footer class="border-t border-gray-200">
-      <div class="pt-12 pb-16 mx-20 grid grid-cols-12 gap-12">
-        <div class="col-span-4">
+      <div class="pt-12 pb-16 mx-5 sm:mx-10 md:mx-20 md:grid md:grid-cols-12 gap-12">
+        <div class="mb-6 md:mb-0 md:col-span-6 lg:col-span-3">
           <img class="w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk-brand">
           <div class="mt-4 mb-2">
             <h3 class="font-bold text-blue-900 text-xl">UPT. BKPK UNIVERSITAS MATARAM</h3>
           </div>
           <p>Jl. Majapahit No.62, Gomong, Selaparang
-            Kota Mataram, Nusa Tenggara Bar. 83115 Tel: (0370) 633007
+            Kota Mataram, Nusa Tenggara Barat Kode Pos : 83115 Tel: (0370) 633007
           </p>
         </div>
-        <div class="col-span-3 ml-6">
+        <div class="mb-6 lg:pl-4 md:mb-0 lg:ml-6 md:col-span-6 lg:col-span-3 justify-center">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Menu Utama</h4>
           <ul>
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">Beranda</a></li>
@@ -332,7 +332,7 @@
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">Tentang Kami</a></li>
           </ul>
         </div>
-        <div class="col-span-3">
+        <div class="mb-6 md:mb-0 md:col-span-6 lg:col-span-3">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Lembaga Unit</h4>
           <ul>
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">UNRAM</a></li>
@@ -342,12 +342,12 @@
             <li class="mb-3"><a class="hover:text-yellow-600" href="#">UPT Kerarsipan</a></li>
           </ul>
         </div>
-        <div class="col-span-2">
+        <div class="md:col-span-6 lg:col-span-3">
           <h4 class="mb-4 text-xl font-semibold text-gray-800">Sosial Media</h4>
-          <ul class="flex">
-            <li class="pr-3"><a href="#"><img class="w-10" src="./images/icon-gmail.png" alt="Instagram"></a></li>
-            <li class="pr-3"><a href="#"><img class="w-10" src="./images/icon-ig.png" alt="Instagram"></a></li>
-            <li class=""><a href="#"><img class="w-10" src="./images/icon-fb.png" alt="Instagram"></a></li>
+          <ul class="flex md:flex-wrap">
+            <li class="pr-1"><a href="#"><img class="md:w-10" src="./images/icons/icon-gmail.svg" alt="Instagram"></a></li>
+            <li class="pr-1"><a href="#"><img class="md:w-10" src="./images/icons/icon-instagram.svg" alt="Instagram"></a></li>
+            <li class="pr-0"><a href="#"><img class="md:w-10" src="./images/icons/icon-facebook.svg" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>
@@ -356,5 +356,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="./main.js"></script>
 </body>
 </html>

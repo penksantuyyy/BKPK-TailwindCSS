@@ -621,6 +621,7 @@ video {
 }
 
 .btn {
+  display: inline-block;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.75rem;
@@ -638,12 +639,13 @@ video {
   transition-duration: 500ms;
   border-width: 2px;
   border-color: transparent;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 
 @media (min-width: 768px) {
   .btn {
     font-size: 1rem;
+    letter-spacing: 0.05em;
   }
 }
 

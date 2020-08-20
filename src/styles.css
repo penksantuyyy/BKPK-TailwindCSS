@@ -5,12 +5,12 @@
 @tailwind components;
 
 .btn {
-  @apply px-6 py-3 cursor-pointer text-sm uppercase text-gray-900 font-semibold rounded transition ease-in-out duration-500 border-2 border-transparent tracking-wider;
+  @apply inline-block px-6 py-3 cursor-pointer text-sm uppercase text-gray-900 font-semibold rounded transition ease-in-out duration-500 border-2 border-transparent tracking-wide;
 }
 
 @screen md {
   .btn {
-    @apply text-base;
+    @apply text-base tracking-wider;
   }
 }
 

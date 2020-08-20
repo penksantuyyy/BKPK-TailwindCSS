@@ -12,20 +12,22 @@
 <body class="font-body text-sm md:text-base text-gray-600 bg-gray-100">
   <div class="mx-auto">
     <!-- Navigation -->
-    <div class="border-b border-gray-300">
-      <nav class="mx-10 my-4 relative flex justify-between items-center">
-        <div class="mx-0 sm:mx-5 md:mx-10 flex items-center">
-          <img class="mr-4 w-8 sm:w-10 md:w-12 lg:w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk">
-          <div class="hidden lg:block">
-            <h3 class="font-bold text-blue-900">UPT BKPK UNRAM</h3>
-            <p class="text-xs">Bimbingan Konseling & Pembinaan Karier</p>
+    <div class="border-b border-gray-300 sticky z-20 top-0 overflow-hidden w-full bg-gray-100">
+      <nav class="px-0 md:px-12 text-left md:flex justify-between items-center">
+        <div class="px-10 md:px-0 py-4 w-full flex flex-row justify-between items-center border-b border-gray-300 md:border-none">
+          <div class="mx-0 block md:flex md:items-center">
+            <img class="mr-0 md:mr-4 w-12 lg:w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk">
+            <div class="hidden lg:block">
+              <h3 class="font-bold text-blue-900">UPT BKPK UNRAM</h3>
+              <p class="text-xs">Bimbingan Konseling & Pembinaan Karier</p>
+            </div>
+          </div>
+          <div class="block md:hidden" id="navbarBurger">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </div>
         </div>
-        <div class="mx-0 sm:mx-5 md:mx-10 block md:hidden" id="navbarBurger">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </div>
-        <div class="hidden md:block absolute md:static mt-64 md:mt-0 left-0 min-w-full min-h-full md:min-h-0 md:min-w-0 z-10 md:z-0 uppercase" id="menuNavbar">
-          <ul class="mt-4 sm:mt-0 mx-0 py-2 bg-gray-100 shadow-xl md:shadow-none md:flex">
+        <div class="hidden md:block" id="menuNavbar">
+          <ul class="py-2 bg-gray-100 shadow-xl md:shadow-none md:flex uppercase">
             <li class="px-8 md:px-4 py-2 md:py-0 text-blue-800 font-bold hover:bg-yellow-400 md:hover:bg-transparent md:hover:text-yellow-600">
               <a href="index.html">Beranda</a>
             </li>
@@ -58,9 +60,9 @@
               Bimbingan Konseling dan Pembinaan Karier
             </p>
   
-            <button class="btn btn-fill">
+            <a class="btn btn-fill" href="#">
               Konsultasi Sekarang
-            </button>
+            </a>
           </div>
   
           <div class="mt-6 md:mt-0 px-10 py-4 md:py-6 w-full md:w-1/2">
@@ -70,7 +72,7 @@
       </section>
 
       <!-- News -->
-      <section class="my-40 mx-10 md:mx-20">
+      <section class="my-40 mx-5 sm:mx-10 md:mx-20">
         <div class="text-center mb-8 md:mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">BERITA TERBARU</h3>
           <p class="font-medium tracking-wider">Baca berita terkini dari kami</p>
@@ -81,7 +83,7 @@
             <img class="w-full h-64 object-cover" src="./images/news-1.jpg" alt="news-photo-1">
             <div class="px-4">
               <h3 class="mt-4 font-semibold text-xl text-blue-900">
-                <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="#">Tips Menjaga Kesehatan Ditengah Pandemi</a>
+                <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="detail-berita.html">Tips Menjaga Kesehatan Ditengah Pandemi</a>
               </h3>
               <p class="mt-2 mb-8">Kesehatan Merupakan Kunci demi keselamatan ditengah pandemi [...]</p>
               <div class="mb-4 flex">
@@ -101,7 +103,7 @@
             <img class="w-full h-64 object-cover" src="./images/gallery-11.jpg" alt="news-photo-2">
             <div class="px-4">
               <h3 class="mt-4 font-semibold text-xl text-blue-900">
-                <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="#">Kebanyakan Rebahan Mengakibatkan Stress Akut</a>
+                <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="detail-berita.html">Kebanyakan Rebahan Mengakibatkan Stress Akut</a>
               </h3>
               <p class="mt-2 mb-8">Ditengah pandemi, pekerjaan menjadi mandek, dan rebahan [...]</p>
               <div class="mb-4 flex">
@@ -121,7 +123,7 @@
             <img class="w-full h-64 object-cover" src="./images/news-3.jpg" alt="news-photo-3">
             <div class="px-4">
               <h3 class="mt-4 font-semibold text-xl text-blue-900">
-                <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="#">Meracik Obat Alami untuk Insomnia Akut</a>
+                <a class="hover:text-yellow-700 transition ease-in-out duration-700" href="detail-berita.html">Meracik Obat Alami untuk Insomnia Akut</a>
               </h3>
               <p class="mt-2 mb-8">Begadang menjadi salah satu kebiasaan baru ditengah marak [...]</p>
               <div class="mb-4 flex">
@@ -138,53 +140,53 @@
         </div>
 
         <div class="text-center mt-16">
-          <button class="btn btn-fill">
+          <a class="btn btn-fill" href="./berita.html">
             Selengkapnya
-          </button>
+          </a>
         </div>
       </section>
 
       <!-- Gallery -->
-      <section class="my-40 mx-10 md:mx-20">
+      <section class="my-40 mx-5 sm:mx-10 md:mx-20">
         <div class="text-center mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">GALERI FOTO</h3>
           <p class="font-medium tracking-wider">Lihat berbagai foto kegiatan kami</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-12 gap-4 md:gap-8">
-          <div class="md:col-span-4 rounded overflow-hidden">
+        <div class="block sm:grid sm:grid-cols-2 md:grid-cols-12 gap-4 md:gap-8">
+          <div class="mb-4 sm:mb-0 md:col-span-4 rounded overflow-hidden">
             <img class="min-h-full max-w-full object-cover block" src="./images/gallery-1.jpg" alt="gallery-1">
           </div>
   
-          <div class="md:col-span-4 rounded overflow-hidden">
+          <div class="mb-4 sm:mb-0 md:col-span-4 rounded overflow-hidden">
             <img class="min-h-full max-w-full object-cover block" src="./images/gallery-2.jpg" alt="gallery-2">
           </div>
   
-          <div class="md:col-span-4 rounded overflow-hidden">
+          <div class="mb-4 sm:mb-0 md:col-span-4 rounded overflow-hidden">
             <img class="min-h-full max-w-full object-cover block" src="./images/gallery-3.jpg" alt="gallery-3">
           </div>
 
-          <div class="md:col-span-4 rounded overflow-hidden">
+          <div class="mb-4 sm:mb-0 md:col-span-4 rounded overflow-hidden">
             <img class="min-h-full max-w-full object-cover block" src="./images/gallery-4.jpg" alt="gallery-4">
           </div>
   
-          <div class="md:col-span-4 rounded overflow-hidden">
+          <div class="mb-4 sm:mb-0 md:col-span-4 rounded overflow-hidden">
             <img class="min-h-full max-w-full object-cover block" src="./images/gallery-5.jpg" alt="gallery-5">
           </div>
   
-          <div class="md:col-span-4 rounded overflow-hidden">
+          <div class="mb-4 sm:mb-0 md:col-span-4 rounded overflow-hidden">
             <img class="min-h-full max-w-full object-cover block" src="./images/gallery-11.jpg" alt="gallery-6">
           </div>
         </div>
 
         <div class="text-center mt-16">
-          <button class="btn btn-fill">
+          <a class="btn btn-fill" href="./galeri.html">
             Selengkapnya
-          </button>
+          </a>
         </div>
       </section>
 
       <!-- Information -->
-      <section class="my-40 mx-10 md:mx-20">
+      <section class="my-40 mx-5 sm:mx-10 md:mx-20">
         <div class="text-center mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">INFORMASI TERBARU</h3>
           <p class="font-medium tracking-wider">Unduh Informasi Lengkap Disini</p>
@@ -194,7 +196,7 @@
           <!-- Card Information 1-->
           <div class="mb-6 flex flex-col lg:flex-row border border-gray-200 rounded overflow-hidden">
             <div class="block lg:w-2/5">
-              <img class="h-56 w-full lg:w-full lg:h-full object-cover" src="./images/info-1.jpg" alt="info-1">
+              <img class="h-64 w-full lg:w-full lg:h-full object-cover" src="./images/info-1.jpg" alt="info-1">
             </div>
             <div class="px-6 py-4 pd:py-8 md:px-6 lg:w-3/5">
               <div class="">
@@ -216,7 +218,7 @@
           <!-- Card Information 2-->
           <div class="mb-6 flex flex-col lg:flex-row border border-gray-200 rounded overflow-hidden">
             <div class="block lg:w-2/5">
-              <img class="h-56 w-full lg:w-full lg:h-full object-cover" src="./images/info-2.jpg" alt="info-2">
+              <img class="h-64 w-full lg:w-full lg:h-full object-cover" src="./images/info-2.jpg" alt="info-2">
             </div>
             <div class="px-6 py-4 pd:py-8 md:px-6 lg:w-3/5">
               <div class="">
@@ -238,7 +240,7 @@
           <!-- Card Information 3-->
           <div class="mb-6 flex flex-col lg:flex-row border border-gray-200 rounded overflow-hidden">
             <div class="block lg:w-2/5">
-              <img class="h-56 w-full lg:w-full lg:h-full object-cover" src="./images/info-3.jpg" alt="info-3">
+              <img class="h-64 w-full lg:w-full lg:h-full object-cover" src="./images/info-3.jpg" alt="info-3">
             </div>
             <div class="px-6 py-4 pd:py-8 md:px-6 lg:w-3/5">
               <div class="">
@@ -260,7 +262,7 @@
           <!-- Card Information 4-->
           <div class="mb-6 flex flex-col lg:flex-row border border-gray-200 rounded overflow-hidden">
             <div class="block lg:w-2/5">
-              <img class="h-56 w-full lg:w-full lg:h-full object-cover" src="./images/info-4.jpg" alt="info-4">
+              <img class="h-64 w-full lg:w-full lg:h-full object-cover" src="./images/info-4.jpg" alt="info-4">
             </div>
             <div class="px-6 py-4 pd:py-8 md:px-6 lg:w-3/5">
               <div class="">
@@ -281,14 +283,14 @@
         </div>
 
         <div class="text-center mt-16">
-          <button class="btn btn-fill">
+          <a class="btn btn-fill" href="./informasi.html">
             Selengkapnya
-          </button>
+          </a>
         </div>
       </section>
 
       <!-- About Us-->
-      <section class="mx-10 md:mx-20 my-40">
+      <section class="mx-5 sm:mx-10 md:mx-20 my-40">
         <div class="text-center mb-10">
           <h3 class="font-extrabold text-2xl tracking-wider text-blue-900">TENTANG KAMI</h3>
           <p class="font-medium tracking-wider">Baca Sejarah dan Cerita Kami</p>
@@ -323,15 +325,15 @@
         </div>
 
         <div class="text-center mt-16">
-          <button class="btn btn-fill">
+          <a class="btn btn-fill" href="./tentang.html">
             Selengkapnya
-          </button>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="border-t border-gray-200">
-      <div class="pt-12 pb-16 mx-10 md:mx-20 md:grid md:grid-cols-12 gap-12">
+      <div class="pt-12 pb-16 mx-5 sm:mx-10 md:mx-20 md:grid md:grid-cols-12 gap-12">
         <div class="mb-6 md:mb-0 md:col-span-6 lg:col-span-3">
           <img class="w-16" src="./images/logo-bkpk-brand.png" alt="logo-bkpk-brand">
           <div class="mt-4 mb-2">

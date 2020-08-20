@@ -625,6 +625,7 @@ video {
   padding-right: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  cursor: pointer;
   font-size: 0.875rem;
   text-transform: uppercase;
   --text-opacity: 1;
